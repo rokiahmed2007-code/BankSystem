@@ -25,5 +25,15 @@ void Customer::DisplayInfo() {
 	cout << "Name :" << name << endl;
 	cout << "ID :" << customerID << endl;
 	cout << "Phone Number :" << phonenumber << endl;
-	cout << "E-mail :" << email << endl;
+	cout << "E-mail :" << email << endl; 
+}
+
+void Customer::AddSavingAccount(SavingAccount& account) {
+
+	savingaccounts.push_back(account);
+}
+
+void Customer::AddCurrentAccount(CurrentAccount& account) {
+
+	currentaccounts.push_back(account);
 }

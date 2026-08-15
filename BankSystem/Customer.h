@@ -1,5 +1,8 @@
 #pragma once
 #include <iostream>
+#include<vector>
+#include"SavingAccount.h"
+#include"CurrentAccount.h"
 
 using namespace std;
 
@@ -10,6 +13,9 @@ private:
 	string name;
 	string phonenumber;
 	string email;
+	vector<SavingAccount> savingaccounts;
+	vector<CurrentAccount> currentaccounts;
+
 
 public:
 	 Customer(int customerID, string name, string phonenumber, string email);
@@ -23,5 +29,7 @@ public:
 	 void setEmail(string email);
 	 void DisplayInfo();
 
+	 void AddSavingAccount(SavingAccount& account);
+	 void AddCurrentAccount(CurrentAccount& account);
 };
 
