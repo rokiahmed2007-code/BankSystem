@@ -6,7 +6,7 @@ using namespace std;
 
 class Account {
 
-private:
+protected:
 	int accountnumber;
 	double balance;
 	Customer* owner;
